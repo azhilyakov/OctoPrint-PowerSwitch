@@ -1,0 +1,6 @@
+{{ _('Printer Power State: ') }}  <strong data-bind="text: powerswitch_state"></strong><br>
+<br>
+<div id="sidebar_plugin_powerswitch" class="input-group">
+  <button class="btn btn-primary" id="powerswitch_on" data-bind="click: powerswitch_on, enable: true"> <i class="icon-bolt"></i> {{ _('Turn printer ON') }} </button>
+  <button class="btn btn-danger" id="powerswitch_off" data-bind="click: powerswitch_off, enable: true"> <i class="icon-fire-extinguisher"></i> {{ _('Turn it OFF') }} </button>
+</div>
