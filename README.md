@@ -14,8 +14,19 @@ Install via the bundled [Plugin Manager] or manually using this URL:
 
 1. Install pgpio library: http://abyz.co.uk/rpi/pigpio/
 
+	wget abyz.co.uk/rpi/pigpio/pigpio.zip
+	unzip pigpio.zip
+	cd PIGPIO
+	make
+	sudo make install
+	sudo /usr/local/bin/pigpiod -l
+
+	sudo vi /etc/rc.local
+	Add line: /usr/local/bin/pigpiod -l
+
 2) Connect one of Raspberry Pi's GPIO pins to a relay such as PowerSwitch Tail II
 
-3) Enter PIN number in plugin settings
+3) Go to PowerSwitch plugin settings and set pin number of the relay connection
+
 
 
